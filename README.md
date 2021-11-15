@@ -9,6 +9,7 @@ Click the links below to see details for a particular model.
 
  * [Sale Order](models/sale-order.md)
  * [Product](models/sale-order.md)
+ * [Bill of Materials](models/mrp-bom.md)
  * [Pricelist](models/sale-order.md)
  * [Partner (Company, Branch, User)](models/sale-order.md)
  * [Stock Picking](models/sale-order.md)
@@ -78,7 +79,10 @@ async function odoo_read(model, ids, fields, kwarg) {
 }
 async function odoo_create(model, values, kwarg) {
     kwargs_skip_sync(kwargs);
-    return odoo_exec(model, 'create', [values], kwarg);
+    if (typeof(values) != Array) {
+        values = [values];
+    }
+    return odoo_exec(model, 'create', values, kwarg);
 }
 async function odoo_update(model, ids, new_values, kwarg) {
     kwargs_skip_sync(kwargs);
