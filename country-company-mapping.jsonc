@@ -1,0 +1,30 @@
+[
+    // default company for any countries not explicitly defined
+    {
+        "country_name": "DEFAULT",
+
+        // maps to
+        "company_name": "BOA Hydrailics",
+        "company_id": 1
+    },
+
+    {
+        "country_name": "New Zealand",
+        "country_code": "NZ",
+        "country_id": 170,
+
+        // maps to
+        "company_name": "BOA Hydrailics",
+        "company_id": 1
+    },
+
+    {
+        "country_name": "Australia",
+        "country_code": "AU",
+        "country_id": 13,
+
+        // maps to
+        "company_name": "BOA Hydrailics Australia",
+        "company_id": 3
+    }
+]
