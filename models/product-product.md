@@ -39,7 +39,13 @@ var template_id = await odoo_create(
 
         // static fields
         'product_categ_id': 1,
+
+        // select the desired routes
         'route_ids': [
+            // regular product - ship from stock
+            [4, 1, false],
+
+            // manufactured product - trigger an MO
             [4, 1, false],
         ],
     }
