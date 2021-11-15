@@ -144,6 +144,8 @@ Odoo will post data back to BOAhub when some events/updates occur.
 
 Called when the picking is updated (e.g. validated). Note this will perform an upsert to re-sync BOAhub (e.g. in case the picking was backordered, so we need to update the original picking, and create a new one).
 
+Note this callback is also documented in the Picking doc.
+
 ### `invoice_update`
 
 Called when the invoice is created/updated.
