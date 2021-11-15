@@ -1,0 +1,16 @@
+// field mapping for the `sale.order` model
+//
+// note that
+// - keys: are the Odoo field names
+// - values: are the BOAhub field names
+//
+// also note that this doc does not specify all available fields.
+// instead, we only include ones which sync Odoo -> BOAhub, or
+// bulk optional fields lists (e.g. for the product attrs)
+
+{
+    // this is a custom computed field used to specify the 
+    // status to show on BOAhub.
+    //@type string
+    "boahub_status": ""
+}
