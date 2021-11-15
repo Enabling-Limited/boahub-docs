@@ -10,9 +10,9 @@ Click the links below to see details for a particular model.
  * [Sale Order](models/sale-order.md)
  * [Product](models/sale-order.md)
  * [Bill of Materials](models/mrp-bom.md)
- * [Pricelist](models/sale-order.md)
- * [Partner (Company, Branch, User)](models/sale-order.md)
- * [Stock Picking](models/sale-order.md)
+ * [Pricelist](models/product-pricelist.md)
+ * [Partner (Company, Branch, User)](models/res-partner.md)
+ * [Stock Picking](models/stock-picking.md)
 
 
 ## Odoo XML-RPC API
