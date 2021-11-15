@@ -1,0 +1,61 @@
+// field mapping for the `product.pricelist` model
+//
+// note that
+// - keys: are the Odoo field names
+// - values: are the BOAhub field names
+//
+// also note that this doc does not specify all available fields.
+// instead, we only include ones which sync Odoo -> BOAhub, or
+// bulk optional fields lists (e.g. for the product attrs)
+
+{
+    // the user-visible display name
+    //@type string
+    "name": "",
+
+    // the reference/product code
+    //@type string
+    "default_code": "Stock Code",
+
+    // the quantity of units stored in a single pack/box
+    //@type float
+    "box_quantity": "Full Coil Size – meter",
+
+    // Captures nominal pipe size value
+    //@type string (BOAhub), selection (Odoo)
+    "": "Nominal Pipe Size",
+
+    // Captures thickness of ‘flange’ fittings/adaptors
+    //@type string (BOAhub), selection (Odoo)
+    "": "Flange Thickness",
+
+    //@type float
+    "": "Working Pressure PSI",
+
+    //@type float
+    "": "Working Pressure BAR",
+
+    //@type string
+    "barcode": "Barcode 1",
+
+    //@type string
+    "weight": "Weight",
+
+
+    // should the pricelist be synced to BOAhub?
+    // note: perhaps a dedicated API route for pricelist enable/disable
+    // would be better
+    //@type boolean
+    "sync_to_boahub": "",
+
+    // the pricelist items. we need to decide how best to handle this
+    // re BOAhub's doc schema
+    //@type recordset (odoo), document (BOAhub)
+    "item_ids": ""
+
+    // for example:
+    // "item_ids": {
+    //     "1234": "12.50",
+    //     "5678": "100.00",
+    // }
+}
