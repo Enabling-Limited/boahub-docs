@@ -9,10 +9,18 @@
 // bulk optional fields lists (e.g. for the product attrs)
 
 {
+    // this is sent from the Odoo side, and contains the orders' portal URL
+    //@type string
+    "boahub_portal_url": "",
+
     // this is a custom computed field used to specify the 
     // status to show on BOAhub.
     //@type string
     "boahub_status": "",
+
+    // the 'delivery date' set in Odoo, may be changed by warehouse team
+    //@type string (ISO8601 date, UTC)
+    "commitment_date": "",
 
     // misc other fields from the model doc
     "client_order_ref": "",
