@@ -31,6 +31,9 @@ var sale_order_id = await odoo_create(
         // make sure to set the BOAhub doc id
         'boahub_id': 'XXXX-XXXX-XXXX',
 
+        // the BOAhub "order" id/ref field
+        'boahub_order_id': 'ABC123',
+
         // top-level partner linked to the SO (e.g. the company/branch)
         'partner_id': 123,
 
