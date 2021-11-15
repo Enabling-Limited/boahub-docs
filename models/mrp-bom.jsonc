@@ -1,0 +1,13 @@
+// field mapping for the `stock.picking` model
+//
+// note that
+// - keys: are the Odoo field names
+// - values: are the BOAhub field names
+//
+// also note that this doc does not specify all available fields.
+// instead, we only include ones which sync Odoo -> BOAhub, or
+// bulk optional fields lists (e.g. for the product attrs)
+
+{
+    // note: BoMs will not be syncing Odoo -> BOAhub, so no mapping is needed
+}
