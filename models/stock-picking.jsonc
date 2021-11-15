@@ -16,5 +16,26 @@
     // this is a custom computed field used to specify the 
     // status to show on BOAhub.
     //@type string
-    "boahub_status": ""
+    "boahub_status": "",
+
+    // the picking reference (e.g. "ALKSI/OUT/01234")
+    //@type string
+    "name": "",
+
+    // date that the picking was created
+    //@type string (ISO8601 date, in UTC)
+    "date": "",
+
+    // date that the picking was validated (if it's state == done)
+    //@type string (ISO8601 date, in UTC)
+    "date_done": "",
+
+    // the tracking URL
+    //@type string (URL)
+    "carrier_tracking_url": "",
+
+    // the partner who this delivery is being shipped to
+    // e.g. you could read the address info from that parter
+    //@type id (single, res.partner)
+    "partner_id": ""
 }
