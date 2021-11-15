@@ -12,5 +12,10 @@
     // this is a custom computed field used to specify the 
     // status to show on BOAhub.
     //@type string
-    "boahub_status": ""
+    "boahub_status": "",
+
+    // misc other fields from the model doc
+    "client_order_ref": "",
+    "name": "",
+    "date_order": ""
 }
