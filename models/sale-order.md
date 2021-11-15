@@ -1,5 +1,9 @@
 # Model: Sale Order
 
+[Field Mapping](sale-order.jsonc)
+
+<br />
+
 ## States
 
 The `sale.order` model has several states, stored in the `state` field
