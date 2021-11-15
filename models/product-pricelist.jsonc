@@ -1,0 +1,32 @@
+// field mapping for the `product.pricelist` model
+//
+// note that
+// - keys: are the Odoo field names
+// - values: are the BOAhub field names
+//
+// also note that this doc does not specify all available fields.
+// instead, we only include ones which sync Odoo -> BOAhub, or
+// bulk optional fields lists (e.g. for the product attrs)
+
+{
+    // the user-visible display name
+    //@type string
+    "name": "",
+
+    // should the pricelist be synced to BOAhub?
+    // note: perhaps a dedicated API route for pricelist enable/disable
+    // would be better
+    //@type boolean
+    "sync_to_boahub": "",
+
+    // the pricelist items. we need to decide how best to handle this
+    // re BOAhub's doc schema
+    //@type recordset (odoo), document (BOAhub)
+    "item_ids": ""
+
+    // for example:
+    // "item_ids": {
+    //     "1234": "12.50",
+    //     "5678": "100.00",
+    // }
+}
