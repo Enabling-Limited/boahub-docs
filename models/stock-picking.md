@@ -1,4 +1,4 @@
-# Model: Bill of Materials
+# Model: Stock Picking
 
 [Field Mapping](stock-picking.jsonc)
 
