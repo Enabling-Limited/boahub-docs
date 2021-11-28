@@ -37,5 +37,32 @@
     // the partner who this delivery is being shipped to
     // e.g. you could read the address info from that parter
     //@type id (single, res.partner)
-    "partner_id": ""
+    "partner_id": "",
+
+    // the picking status
+    // will clarify with Deryck which statuses are to be sent
+    //@type string
+    "status": "waiting",
+
+    // the actual product lines
+    //@type array[Object{}]
+    "lines": [
+        {
+            // the product that this line relates to
+            //@type integer (Odoo: product.product)
+            "product_id": 1,
+
+            // the line description (normally this is the product name)
+            //@type string
+            "description": "A06",
+
+            // number of units being transferred/delivered
+            //@type float
+            "quantity": 100.0,
+
+            // a string repr of the unit of measure
+            //@type string
+            "uom": "Unit(s)",
+        }
+    ]
 }
