@@ -25,8 +25,9 @@ To create an SO, the following process should be used:
 
 ```javascript
 // step #1: create the sale order
-var sale_order_id = await odoo_create(
+var sale_order_id = await odoo_call(
     'sale.order',
+    'boahub_create',
     {
         // make sure to set the BOAhub doc id
         'boahub_id': 'XXXX-XXXX-XXXX',
